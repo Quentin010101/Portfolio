@@ -1,3 +1,100 @@
 #section-contact{
-    background: var(--col-White)
+    background: var(--col-White);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-cv{
+    align-self: flex-start;
+    margin-left: 5%;
+    margin-top: 6%;
+}
+.container-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65%;
+    width: 100%;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    width: 98%;
+    margin-top: 2%;
+    background-color: var(--col-black);
+    box-shadow: 0.4em 0.4em 0.2em var(--col-black);
+
+}
+form hr{
+    color: var(--col-secondaire-1);
+    width: 20%;
+    align-self: center;
+}
+label{
+    font-family: var(--font2);
+    color: var(--col-White);
+    font-size: 1.3em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+
+}
+input[type="submit"]{
+    align-self: center;
+    border: solid 3px black;
+    font-family: var(--font2);
+    font-size: 1.3em;
+    background: var(--col-White);
+    color: var(--col-black);
+    padding: 0.25em 0.5em;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+input[type="submit"]:hover{
+    color: var(--col-secondaire-1);
+    border: solid 3px var(--col-secondaire-1);
+    transition: all 0.5s;
+}
+label, input[type="text"], input[type="email"]{
+    margin-left: 15%;
+
+}
+input[type="text"], input[type="email"]{
+    width: 30%;
+    height: 8%;
+    margin-bottom: 1%;
+    padding-left: 1em;
+    /* box-shadow: inline 2em 2em 0.2em var(--col-black); */
+}
+form ion-icon{
+    color:var(--col-secondaire-1);
+}
+textarea{
+    margin: 1% 0;
+    resize: none;
+    width: 75%;
+    height: 35%;
+    padding: 1em;
+    align-self: center;
+    font-family: var(--font2);
+    font-size: 1em;
+}
+.container-icon{
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.container-icon > div{
+    width: 50%;
+}
+.container-icon ion-icon{
+    font-size: 2em;
+    color: var(--col-secondaire-1)
 }
