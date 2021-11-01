@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /*-------------------- Font family --------------*/
+    --font1: 'Roboto', sans-serif;
+    --font2: 'Poppins', sans-serif;
+    /*-------------------- Color --------------*/
+    --col-White: rgb(255,255,255);
+    --col-black: rgb(0,0,0);
+    --col-secondaire-1: rgb(28, 67, 238);
+    --col-secondaire-2: rgb(11, 139, 54);
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 1em;
+    overflow: hidden;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+section{
+    height: 100vh;
+    min-height: 600px;
+    width: 100%;
+}
+
+@media (max-width: 800px){
+    body{
+        font-size: 0.8em;
+    }
+    .container-langue{
+        font-size: 1em;
+    }
+}

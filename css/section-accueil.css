@@ -1,0 +1,53 @@
+#section-accueil{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--col-black);
+    z-index: -1;
+}
+.container-titre{
+    color: var(--col-White);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.container-titre h3{
+    font-size: 2.8em;
+    font-weight: 400;
+    font-family: var(--font2);
+    letter-spacing: 0.1em;
+}
+.container-titre > div{
+    font-size: 1.5em;
+    width: 24em;
+    display: flex;
+    align-items: center;
+}
+.container-titre h4{
+    font-family: var(--font1);
+
+    letter-spacing: 0.1em;
+    font-weight: 300;
+    margin-right: 10px;
+}
+.container-titre span{
+    color: var(--col-secondaire-1);
+    font-family: var(--font2);
+    font-weight: 500;
+    font-size: 28px;
+    letter-spacing: 5px;
+}
+.clignote{
+    animation: clignote 1s infinite
+}
+@keyframes clignote{
+    0%{ opacity: 1}
+    20%{ opacity: 1}
+    50%{ opacity: 0}
+    80%{ opacity: 1}
+    100%{ opacity: 1}
+}
+
