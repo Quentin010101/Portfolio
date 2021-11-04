@@ -49,12 +49,7 @@ document.addEventListener('wheel', function (event) {
         }
     }
 })
-// ------------------- Click lien --------------------------------------
-arrL.forEach((element)=>{
-    element.addEventListener('click', function(){
 
-    })
-})
 // --------------------Navigation changement de section ----------------
 
 

@@ -32,6 +32,23 @@ section{
     min-height: 600px;
     width: 100%;
 }
+/* -------------------Classe pour les lien de navigation ---------------------- */
+.navColorClasseBlack{
+    font-size: 0.8em;
+    color: var(--col-black);
+    transition: all 0.4s;
+}
+.navColorClasseWhite{
+    font-size: 0.8em;
+    color: var(--col-White);
+    transition: all 0.4s;
+}
+.navColorClasseSpecial{
+    font-size: 1.3em;
+    color: var(--col-secondaire-1);
+    transition: all 0.4s;
+}
+/* ----------x---------Classe pour les lien de navigation -------------x--------- */
 
 @media (max-width: 800px){
     body{
