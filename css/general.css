@@ -48,6 +48,12 @@ section{
     color: var(--col-secondaire-1);
     transition: all 0.4s;
 }
+.elementColorClasseBlack{
+    color: var(--col-black);
+}
+.elementColorClasseWhite{
+    color: var(--col-White);
+}
 /* ----------x---------Classe pour les lien de navigation -------------x--------- */
 
 @media (max-width: 800px){

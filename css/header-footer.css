@@ -13,7 +13,6 @@ nav{
 }
 nav .burger{
     font-size: 3em;
-    color: red;
     display: none;
 }
 nav ul{
@@ -133,13 +132,18 @@ footer h6{
         justify-content: center;
         align-items: center;
         top:0;
-        background: rgba(10, 10, 10, 0.9);
         left: 100%;
         width: 100%;
         overflow: hidden;
         font-size: 3em;
         transition: left 0.4s;
         
+    }
+    .ulBackgroundBlack{
+        background-color: rgba(0,0,0,0.9);
+    }
+    .ulBackgroundWhite{
+        background-color: rgba(255,255,255,0.9);
     }
 }
 
