@@ -131,4 +131,32 @@
     width: 30%;
 }
 
+@media (max-width: 800px){
+    .container-aPropos{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        margin-top: 5%;
+        width: 95%;
+        height: 85%;
+    }
+    .module{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: var(--col-black);
+        height: 10%;
+        width: 100%;
+        box-shadow: 0.4em 0.4em 0.6em var(--col-black);
+        overflow: hidden;
+        cursor: pointer;
+        transition: "color 0.4s";
+    }
+    .module1{
+        height: 70%;
+    }
+}
+
 

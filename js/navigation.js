@@ -7,11 +7,7 @@ const sectionContact = document.getElementById('section-contact')
 
 const bouttonL = document.querySelector('.container-langue')
 
-let sectionAccueilTop = sectionAccueil.offsetTop
-let sectionAProposTop = sectionAPropos.offsetTop
-let sectionProjetTop = sectionProjet.offsetTop
-let sectionContactTop = sectionContact.offsetTop
-let arrNav = [sectionAccueilTop, sectionAProposTop, sectionProjetTop, sectionContactTop]
+
 
 const l1 = document.querySelector('nav li:nth-child(1) a')
 const l2 = document.querySelector('nav li:nth-child(2) a')
@@ -24,6 +20,12 @@ let scrollExplication = document.querySelector('footer h6')
 
 // --------------- Wheel ---------------------------------------------------
 document.addEventListener('wheel', function (event) {
+    let sectionAccueilTop = sectionAccueil.offsetTop
+    let sectionAProposTop = sectionAPropos.offsetTop
+    let sectionProjetTop = sectionProjet.offsetTop
+    let sectionContactTop = sectionContact.offsetTop
+    let arrNav = [sectionAccueilTop, sectionAProposTop, sectionProjetTop, sectionContactTop]
+    
     let delta = event.deltaY
     let currentPos = document.documentElement.scrollTop
     if (delta > 0) {
@@ -47,7 +49,12 @@ document.addEventListener('wheel', function (event) {
         }
     }
 })
+// ------------------- Click lien --------------------------------------
+arrL.forEach((element)=>{
+    element.addEventListener('click', function(){
 
+    })
+})
 // --------------------Navigation changement de section ----------------
 
 
@@ -93,7 +100,6 @@ function changeColorF(parm) {
 // ---------------Mise a jour du boutton langue --------------------------
 
 function miseAJourBoutton(parm) {
-    console.log("h")
     if(parm !== 0){
         bouttonL.style.opacity = 0
         bouttonL.style.transition = "all 0.5s"

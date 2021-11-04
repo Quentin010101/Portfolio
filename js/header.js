@@ -22,3 +22,15 @@ essai.addEventListener('click', function(){
     }
 })
 
+// ------------------Bouton burger -------------------------------
+
+const burger = document.querySelector('.burger')
+const nav = document.querySelector('nav ul')
+
+burger.addEventListener('click', function(){
+    nav.classList.toggle('navBurger')
+    boutonRotation()
+})
+function boutonRotation (){
+    burger.classList.toggle('navBurgerRotation')
+}

@@ -1,6 +1,7 @@
 #section-contact{
     background: var(--col-White);
     display: flex;
+    padding-top: 15vh;
     flex-direction: column;
     align-items: center;
 }
@@ -8,13 +9,13 @@
 .container-cv{
     align-self: flex-start;
     margin-left: 5%;
-    margin-top: 6%;
+    font-family: var(--font1);
 }
 .container-form{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 65%;
+    height: 65vh;
     width: 100%;
 
 }
@@ -41,12 +42,12 @@ label{
     font-size: 1.3em;
     display: flex;
     align-items: center;
-    gap: 1em;
+    gap: 0.5em;
 
 }
 input[type="submit"]{
     align-self: center;
-    border: solid 3px black;
+    border: solid 2px black;
     font-family: var(--font2);
     font-size: 1.3em;
     background: var(--col-White);
@@ -57,12 +58,11 @@ input[type="submit"]{
 }
 input[type="submit"]:hover{
     color: var(--col-secondaire-1);
-    border: solid 3px var(--col-secondaire-1);
+    border: solid 2px var(--col-secondaire-1);
     transition: all 0.5s;
 }
-label, input[type="text"], input[type="email"]{
-    margin-left: 15%;
-
+label, input[type="text"], input[type="email"], textarea{
+    margin-left: 10%;
 }
 input[type="text"], input[type="email"]{
     width: 30%;
@@ -75,26 +75,52 @@ form ion-icon{
     color:var(--col-secondaire-1);
 }
 textarea{
-    margin: 1% 0;
+    margin-top: 1%;
+    margin-bottom: 1%;
     resize: none;
     width: 75%;
     height: 35%;
     padding: 1em;
-    align-self: center;
     font-family: var(--font2);
     font-size: 1em;
 }
+#section-contact > div:nth-child(3){
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+    margin-top: 4%;
+    font-family: var(--font1);
+}
+#section-contact > div:nth-child(3) ion-icon{
+    margin-left: 0.2em;
+    font-size: 2em;
+    color: var(--col-black); 
+    transition: all 0.4s;
+    cursor: pointer;
+}
+#section-contact > div:nth-child(3) ion-icon:hover{
+    transform: scale(1.2);
+    transition: all 0.4s;
+}
 .container-icon{
-    margin-top: 5%;
+    margin-top: 1em;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 1em;
     width: 100%;
 }
 .container-icon > div{
     width: 50%;
 }
-.container-icon ion-icon{
-    font-size: 2em;
-    color: var(--col-secondaire-1)
+
+@media (max-width: 800px){
+    input[type="text"], input[type="email"]{
+        width: 75%;
+        /* box-shadow: inline 2em 2em 0.2em var(--col-black); */
+    }
+    textarea{
+        margin-top: 5%;
+    }
 }

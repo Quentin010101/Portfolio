@@ -11,6 +11,11 @@ header{
 nav{
     padding: 10px 10px 0 0;
 }
+nav .burger{
+    font-size: 3em;
+    color: red;
+    display: none;
+}
 nav ul{
     display: flex;
     flex-direction: column;
@@ -109,5 +114,40 @@ footer h6{
     font-weight: 400;
 }
 
-
+@media (max-width: 800px){
+    nav .burger{
+        display: flex;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+        z-index: 1;
+        transition: transform 0.4s;
+    }
+    .navBurger{
+        width: 100%;
+        top: 0;
+        left: 0%;
+        transition: left 0.4s;
+    }
+    .navBurgerRotation{
+        transform: rotateZ(-180deg);
+        transition: transform 0.4s;
+    }
+    nav ul{
+        height: 100vh;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top:0;
+        background: rgba(10, 10, 10, 0.9);
+        left: 100%;
+        width: 100%;
+        overflow: hidden;
+        font-size: 3em;
+        transition: left 0.4s;
+        
+    }
+}
 
