@@ -63,15 +63,15 @@
         <section id="section-aPropos">
             <div class="container-aPropos">
                 <div class="module moduleOuvert module1">
-                    <ion-icon name="person-outline"></ion-icon>
-                    <div class="module-container-text profil">
+                    <ion-icon class="moduleIconOuvert" name="person-outline"></ion-icon>
+                    <div class="module-container-text profil module-container-text-opacity1">
                         <h4>A propos de moi :</h4>
                         <p>En pleine reconversion professionel, j'ai choisi de me lancer dans le domaine de l'informatique. Actuellement en formation de <span>Developpeur web et web mobile</span> au centre de formation de <span>l'AFPA St Jérôme</span>, je suis à la recherche d'un stage conventioner en entreprise pour une période d'approximativement 2 mois.</p>
                     </div>
                 </div>
                 <div class="module moduleFerme module2">
-                    <ion-icon name="stats-chart-outline"></ion-icon>
-                    <div class="module-container-text competence">
+                    <ion-icon class="moduleIconFerme" name="stats-chart-outline"></ion-icon>
+                    <div class="module-container-text competence module-container-text-opacity0">
                         <h4>Compétence : <span>Hard-Skills</span></h4>
                         <div>
                             <p>JavaScript :</p>
@@ -96,8 +96,8 @@
                     </div>
                 </div>
                 <div class="module moduleFerme module3">
-                    <ion-icon name="document-outline"></ion-icon>
-                    <div class="module-container-text">
+                    <ion-icon class="moduleIconFerme" name="document-outline"></ion-icon>
+                    <div class="module-container-text module-container-text-opacity0">
                         <h4>Compétence : <span>Soft-Skills</span></h4>
                         <div>
                             <p>- Esprit d'équipe</p>   
@@ -109,7 +109,21 @@
             </div>
         </section>
         <section id="section-projet">
-
+            <div class="container-projet">
+                <div class="projet projet-position1">
+                    <div class="projetBackground"></div>
+                    <div class="container-visible">
+                        <h2>Titre</h2>
+                        <h3>Sous Titre</h3>
+                        <p>Lorem ipsum dolor sit amet conimum assumenda, praesentium eos eum? Facilis exercitationem vero tenetur quod.</p>
+                    </div>
+                    <div class="container-invisible">
+                        <p>Loresapiente iste odio a ili aut harum eaque maxime reiciendis doloribus rerum unde beatae ipsum delectus.</p>
+                    </div>
+                </div>
+                <div class="projet projet-position2">2</div>
+                <div class="projet projet-position3">3</div>
+            </div>
         </section>
         <section id="section-contact">
             <div class="container-cv">
@@ -146,7 +160,8 @@
     <script src="./js/navigation2.js"></script>
     <script src="./js/header.js"></script>
     <script src="./js/section-accueil.js"></script>
-    <script src="./js/section-aPropos2.js"></script>
+    <script src="./js/section-aPropos.js"></script>
+    <script src="./js/section-projet.js"></script>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

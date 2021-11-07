@@ -1,4 +1,126 @@
+:root{
+    --animationProjetTime: 0.8s;
+    --ease: linear;
+}
 #section-projet{
     background: var(--col-black);
     z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-projet{
+    height: 80%;
+    width: 100%;
+    position: relative;
+}
+.container-projet >div:hover .container-invisible{
+    width: 80%;
+    transition: all 0.6s ease-in;
+}
+.container-projet >div:nth-child(1){
+
+}
+.projet{
+    position: absolute;
+    width: 45%;
+    aspect-ratio: 2/1.5;
+    display: flex;
+    border: 10px solid white;
+    background: rgba(0,0,0,0.9);
+    box-shadow: 0.2em 0.2em 0.2em rgba(185, 185, 185, 0.8);
+}
+.projet-position1{
+    left: 20%;
+    top: 50%;
+    z-index: 2;
+    transform:  translate(-50%,-50%) scale(0.7);
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all var(--animationProjetTime) var(--ease);
+}
+.projet-position2{
+    left: 50%;
+    top: 50%;
+    z-index: 3;
+    transform: translate(-50%,-50%);
+
+    transition: all var(--animationProjetTime) var(--ease);
+}
+.projet-position3{
+    left: 80%;
+    top: 50%;
+    z-index: 1;
+    transform: translate(-50%,-50%) scale(0.7);
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all var(--animationProjetTime) var(--ease);
+}
+.retrecirPosition{
+    animation: sca var(--animationProjetTime) var(--ease);
+}
+/* --------------- Card-------------------- */
+.container-visible{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    font-family: var(--font2);
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+.container-invisible{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 0%;
+    background-color: rgba(0,0,0,0.5);
+    font-family: var(--font1);
+    color: white;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.projetBackground{
+    position: absolute;
+    inset: 0;
+    background-image: url('../asset/fond-ecran-wallpaper-image-fonds-ecran-abstrait-hd-03.jpg');
+    mask-image: url('../asset/mask-image.png');
+    mask-size: cover;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    z-index: 0;
+}
+
+
+@keyframes sca{
+    0%{
+        transform: translate(-50%,-50%) scale(0.7);
+    }
+    50%{
+        transform:translate(-50%,-50%) scale(0.5);
+    }
+    100%{
+        transform:translate(-50%,-50%) scale(0.7);
+    }
+}
+@media (max-width: 800px){
+    .projet{
+        width: 85%;
+    }
+    .projet-position1{
+        left: 50%;
+        top: 20%;
+    }
+    .projet-position2{
+        left: 50%;
+        top: 50%;
+    }
+    .projet-position3{
+        left: 50%;
+        top: 80%;
+    }  
 }

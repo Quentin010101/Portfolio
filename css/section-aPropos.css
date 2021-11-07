@@ -1,4 +1,6 @@
-
+:root{
+    --transitionTime: 0.5s;
+}
 #section-aPropos{
     background: var(--col-White);
     z-index: 1;
@@ -20,36 +22,59 @@
     justify-content: center;
     align-items: center;
     background: var(--col-black);
-    height: 100%;
     box-shadow: 0.4em 0.4em 0.6em var(--col-black);
     overflow: hidden;
     cursor: pointer;
     transition: "color 0.4s";
 }
+/* ----------- Classe déplacement des modules ----------------------*/
 .moduleFerme{
+    height: 100%;
     width: 10%;
+    transition: all var(--transitionTime);
+}
+.moduleFermeExtend{
+    height: 100%;
+    width: 8%;
+    transition: all var(--transitionTime);
+
 }
 .moduleOuvert{
+    height: 100%;
     width: 70%;
+    transition: all var(--transitionTime);
+
 }
-.module:hover ion-icon{
-    color: var(--col-White);
-    transition: "color 0.4s";
+.moduleOuvertExtend{
+    height: 100%;
+    width: 72%;
+    transition: all var(--transitionTime);
+
 }
 .module ion-icon{
     position: absolute;
-    bottom: 50%;
-    left: 50%;
-    transform: translate(-50%,50%);
     font-size: 3em;
     color: rgb(122, 122, 122);
 }
-
-.module1 ion-icon{
+.moduleIconFerme{
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    transition: all var(--transitionTime);
+}
+.moduleIconOuvertExtend{
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%,0);
+    transition: all var(--transitionTime);
+}
+.moduleIconOuvert{
     bottom: 20px;
     left: 20px;
     transform: translate(0,0);
+    transition: all var(--transitionTime);
 }
+
 .module-container-text{
     width: 100%;
     height: 90%;
@@ -58,11 +83,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    opacity: 0;
     gap: 8px;
 }
-.module1 .module-container-text{
+/* ----------- Classe opacity des modules ----------------------*/
+.module-container-text-opacity1{
     opacity: 1;
+    transition: opacity var(--transitionTime);
+}
+.module-container-text-opacity0{
+    opacity: 0;
+    transition: opacity var(--transitionTime);
 }
 .module-container-text p{
     font-family: var(--font2);
@@ -157,8 +187,36 @@
         cursor: pointer;
         transition: "color 0.4s";
     }
-    .module1{
+    .moduleFerme{
+        width: 100%;
+        height: 10%;
+    }
+    .moduleFermeExtend{
+        width: 100%;
+        height: 8%;
+    }
+    .moduleOuvert{
+        width: 100%;
         height: 70%;
+    }
+    .moduleOuvertExtend{
+        width: 100%;
+        height: 72%;
+    }
+    .moduleIconFerme{
+        bottom: 50%;
+        left: 50%;
+        transform: translate(-50%,50%);
+    }
+    .moduleIconOuvertExtend{
+        bottom: 20px;
+        left: 20px;
+        transform: translate(0,0);
+    }
+    .moduleIconOuvert{
+        bottom: 20px;
+        left: 20px;
+        transform: translate(0,0);
     }
 }
 
