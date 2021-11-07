@@ -25,7 +25,7 @@ form{
     align-items: flex-start;
     justify-content: center;
     height: 100%;
-    width: 98%;
+    width: 90%;
     margin-top: 2%;
     background-color: var(--col-black);
     box-shadow: 0.4em 0.4em 0.2em var(--col-black);
@@ -84,35 +84,33 @@ textarea{
     font-family: var(--font2);
     font-size: 1em;
 }
-#section-contact > div:nth-child(3){
-    align-self: flex-start;
-    display: flex;
-    align-items: center;
-    margin-top: 1em;
-    margin-top: 4%;
-    font-family: var(--font1);
-}
-#section-contact > div:nth-child(3) ion-icon{
-    margin-left: 0.2em;
+
+.container-icon ion-icon{
+    margin-left: 0.5em;
     font-size: 2em;
     color: var(--col-black); 
     transition: all 0.4s;
     cursor: pointer;
 }
-#section-contact > div:nth-child(3) ion-icon:hover{
+.container-icon ion-icon:hover{
     transform: scale(1.2);
     transition: all 0.4s;
 }
 .container-icon{
-    margin-top: 1em;
+    margin-top: 3%;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: var(--font1);
     gap: 1em;
     width: 100%;
 }
-.container-icon > div{
-    width: 50%;
+.container-icon > div:nth-child(1){
+    display: flex;
+    align-items: center;
+}
+.container-icon > div:nth-child(2){
+    width: 40%;
 }
 
 @media (max-width: 800px){
@@ -121,6 +119,9 @@ textarea{
         /* box-shadow: inline 2em 2em 0.2em var(--col-black); */
     }
     textarea{
-        margin-top: 5%;
+        margin-top: 25px;
+    }
+    .container-icon{
+        flex-direction: column;
     }
 }

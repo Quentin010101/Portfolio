@@ -14,28 +14,22 @@
     width: 100%;
     position: relative;
 }
-.container-projet >div:hover .container-invisible{
-    width: 80%;
-    transition: all 0.6s ease-in;
-}
-.container-projet >div:nth-child(1){
 
-}
 .projet{
     position: absolute;
     width: 45%;
     aspect-ratio: 2/1.5;
     display: flex;
-    border: 10px solid white;
-    background: rgba(0,0,0,0.9);
-    box-shadow: 0.2em 0.2em 0.2em rgba(185, 185, 185, 0.8);
+     /* background-color: rgba(255, 255, 255);  */
+    box-shadow: 0.1em 0.1em 0.1em rgba(5, 5, 5, 0.6);
+    border-radius: 0 10px 10px 0;
 }
 .projet-position1{
     left: 20%;
     top: 50%;
     z-index: 2;
     transform:  translate(-50%,-50%) scale(0.7);
-    opacity: 0.5;
+    opacity: 0.1;
     cursor: pointer;
     transition: all var(--animationProjetTime) var(--ease);
 }
@@ -44,7 +38,6 @@
     top: 50%;
     z-index: 3;
     transform: translate(-50%,-50%);
-
     transition: all var(--animationProjetTime) var(--ease);
 }
 .projet-position3{
@@ -52,7 +45,7 @@
     top: 50%;
     z-index: 1;
     transform: translate(-50%,-50%) scale(0.7);
-    opacity: 0.5;
+    opacity: 0.1;
     cursor: pointer;
     transition: all var(--animationProjetTime) var(--ease);
 }
@@ -65,34 +58,83 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 20%;
+    width: 30%;
     font-family: var(--font2);
-    color: white;
-    background-color: rgba(0,0,0,0.5);
+    color: rgb(255, 255, 255);
+    background: rgba(28, 67, 238,0.9);
+    gap: 3%;
+    box-shadow: 0.25em 0em 0.2em rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
-.container-invisible{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 0%;
-    background-color: rgba(0,0,0,0.5);
+.container-visible p{
     font-family: var(--font1);
-    color: white;
-    overflow: hidden;
+    padding: 0 10%;
+    font-size: max(0.8vw, 10px);
+}
+.container-visible h2{
+    font-family: var(--font2);
+    font-weight: 300;
+    color: var(--col-white);
+    font-size: max(1.5vw, 14px);
+}
+.container-visible h3{
+    font-family: var(--font2);
+    color: var(--col-secondaire-2);
+    font-size: max(1vw, 15px);
+}
+.container-invisibleOuvert{
+    width: 70%;
+    height: 100%;
+    background: rgba(28, 67, 238,0.95);
     z-index: 1;
+    border-radius: 0 10px 10px 0;
+    transition: all 0.5s;
+}
+.container-invisibleFerme{
+    width: 0%;
+    height: 100%;
+    background: rgba(28, 67, 238,0.95);
+    z-index: 1;
+    border-radius: 0 10px 10px 0;
+    transition: all 0.5s;
+}
+.projet button{
+    border: none;
+    padding: 0.5em 0.75em;
+    background-color: rgba(11, 139, 54, 0.8);
+    margin-top: 20%;
+    font-family: var(--font1);
+    color: var(--col-White);
+    cursor: pointer;
+    transition: all 0.5s;
+
+}
+.projet button:hover{
+    background-color: rgba(11, 139, 54, 1);
+    transition: all 0.5s;
 }
 
 .projetBackground{
     position: absolute;
     inset: 0;
-    background-image: url('../asset/fond-ecran-wallpaper-image-fonds-ecran-abstrait-hd-03.jpg');
-    mask-image: url('../asset/mask-image.png');
-    mask-size: cover;
+    mask-image: url('../asset/mask-image\(1\).png');
+    mask-size: 100% 100%;
     mask-position: center;
     mask-repeat: no-repeat;
     z-index: 0;
+}
+.projet1Background{
+    background-image: url('../asset/Screenshot\ 2021-11-07\ at\ 18-58-25\ Document.png');
+    background-size: 100% 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.projet2Background{
+    background-image: url('../asset/Projet2.JPG');
+    background-size: 140% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
 
 
@@ -107,9 +149,26 @@
         transform:translate(-50%,-50%) scale(0.7);
     }
 }
+@media (max-width: 1300px){
+    .projet{
+        width: 75%;
+    }
+    .projet-position1{
+        left: 30%;
+        top: 50%;
+    }
+    .projet-position2{
+        left: 50%;
+        top: 50%;
+    }
+    .projet-position3{
+        left: 70%;
+        top: 50%;
+    }  
+}
 @media (max-width: 800px){
     .projet{
-        width: 85%;
+        width: 72%;
     }
     .projet-position1{
         left: 50%;
@@ -123,4 +182,10 @@
         left: 50%;
         top: 80%;
     }  
+}
+@media (max-width: 600px){
+    .projet{
+        width: 95%;
+    }
+    
 }

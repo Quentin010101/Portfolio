@@ -6,7 +6,7 @@ header{
     display: flex;
     justify-content: space-between;
     font-family: var(--font2);
-    z-index: 1;
+    z-index: 10;
 }
 nav{
     padding: 10px 10px 0 0;
@@ -112,8 +112,11 @@ footer h6{
         top: 25px;
         right: 25px;
         cursor: pointer;
-        z-index: 1;
+        z-index: 10;
         transition: transform 0.4s;
+    }
+    nav{
+        z-index: 1;
     }
     .navBurger{
         width: 100%;
@@ -137,7 +140,7 @@ footer h6{
         overflow: hidden;
         font-size: 3em;
         transition: left 0.4s;
-        
+        z-index: 1;
     }
     .ulBackgroundBlack{
         background-color: rgba(0,0,0,0.9);
