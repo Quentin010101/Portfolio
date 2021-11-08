@@ -61,7 +61,7 @@
     width: 30%;
     font-family: var(--font2);
     color: rgb(255, 255, 255);
-    background: rgba(28, 67, 238,0.9);
+    background: rgba(28, 67, 238,0.95);
     gap: 3%;
     box-shadow: 0.25em 0em 0.2em rgba(0, 0, 0, 0.5);
     z-index: 1;
@@ -98,7 +98,7 @@
     border-radius: 0 10px 10px 0;
     transition: all 0.5s;
 }
-.projet button{
+.projet a{
     border: none;
     padding: 0.5em 0.75em;
     background-color: rgba(11, 139, 54, 0.8);
@@ -107,9 +107,8 @@
     color: var(--col-White);
     cursor: pointer;
     transition: all 0.5s;
-
 }
-.projet button:hover{
+.projet a:hover{
     background-color: rgba(11, 139, 54, 1);
     transition: all 0.5s;
 }
@@ -118,9 +117,10 @@
     position: absolute;
     inset: 0;
     mask-image: url('../asset/mask-image\(1\).png');
-    mask-size: 100% 100%;
-    mask-position: center;
-    mask-repeat: no-repeat;
+    -webkit-mask-image: url('../asset/mask-image\(1\).png');
+    -webkit-mask-size: 100% 100%;
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
     z-index: 0;
 }
 .projet1Background{
