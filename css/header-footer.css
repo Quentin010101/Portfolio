@@ -138,7 +138,7 @@ footer h6{
         left: 100%;
         width: 100%;
         overflow: hidden;
-        font-size: 3em;
+        font-size: 2em;
         transition: left 0.4s;
         z-index: 1;
     }

@@ -14,6 +14,8 @@ function updateLangue(langue1,langue2,element){
             if( i >= latence && langue2.length > i - latence){
                 langue1 = langue1.substring(0,i - latence) + langue2.substring(i - latence, i - latence + 1) + langue1.substring(i - latence + 1)
             }
+            if(element == e18)
+            console.log(langue1)
             element.innerHTML = langue1
         }, intervale)
         intervale += 50
@@ -84,12 +86,54 @@ const e13 = document.querySelector('.module3 div p:nth-child(3)')
 const e14 = document.querySelector('.module3 div p:nth-child(4)')
 
 //---------- Page projet ----------------
-const e15 = document.querySelector('.container-projet div:nth-child(1)')
-let a15 = e15.innerHTML
+let a15 = "Jeux"
+let a16 = "Le jeux du serpent fait à l'aide de Javascript"
+let a17 = "Ouvrir"
+let a18 = "Blog Photo"
+let a19 = "Un petit site sur le theme de la photo en utitlisant Html, Css et un peu de JavaScript."
+let a20 = "Ouvrir"
+let a21 = "Souris"
+let a22 = "Effet d'apparition de balle lors du mouvement de la souris"
+let a23 = "Ouvrir"
+
+let b15 = "Game"
+let b16 = "The Snake game made using JavaScript"
+let b17 = "Open"
+let b18 = "Photo Blog"
+let b19 = "A small site on the subject of the photo using Html, Css and a little of JavaScript."
+let b20 = "Open"
+let b21 = "Mouse"
+let b22 = "Bubble efect on mousemove"
+let b23 = "Open"
+
+const e15 = document.querySelector('.container-projet div:nth-child(1) h3')
+const e16 = document.querySelector('.container-projet div:nth-child(1) p')
+const e17 = document.querySelector('.container-projet div:nth-child(1) a')
+const e18 = document.querySelector('.projet2-h3')
+const e19 = document.querySelector('.projet2-p')
+const e20 = document.querySelector('.projet2-a')
+const e21 = document.querySelector('.container-projet div:nth-child(3) h3')
+const e22 = document.querySelector('.container-projet div:nth-child(3) p')
+const e23 = document.querySelector('.container-projet div:nth-child(3) a')
+
+// ----------Page contact ---------------------------------
+let a24 = "Me contacter"
+let a25 = '<ion-icon name="person-outline"></ion-icon>Nom Prénom'
+let a26 = "Mon Cv"
+
+let b24 = "Contact me"
+let b25 = '<ion-icon name="person-outline"></ion-icon>SurName Name'
+let b26 = "My Cv"
+
+const e24 = document.querySelector('#section-contact div:nth-child(1) h3')
+const e25 = document.querySelector('#section-contact div:nth-child(2) label:nth-child(1)')
+const e26 = document.querySelector('#section-contact div:nth-child(3) h3')
+
 // --------Bouton ----------------------
-let arrStockageFr = [a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14]
-let arrStockageEn = [b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14]
-let arrStockageElement = [e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11,e12,e13,e14]
+let arrStockageFr = [a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20,a21,a22,a23,a24,a25,a26]
+let arrStockageEn = [b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16,b17,b18,b19,b20,b21,b22,b23,b24,b25,b26]
+let arrStockageElement = [e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11,e12,e13,e14,e15,e16,e17,e18,e19,e20,e21,e22,e23,e24,e25,e26]
+
 const bouttonLangue = document.querySelector('.container-langue')
 
 bouttonLangue.addEventListener('click', function(){
