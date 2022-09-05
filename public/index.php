@@ -131,19 +131,19 @@
                                 <h3 class="scroll" data-rate="0.06">About Me</h3>
                             </div>
                             <div id="container-p">
-                                <p>Bonjour, moi c'est <span>Quentin Cozic</span>, je suis actuelement en reconversion proféssionel dans le domaine de <span>l'informatique</span> (et plus particulièrement le <span>Web</span>) 
+                                <p>Bonjour, moi c'est <span>Quentin Cozic</span>, je suis actuellement en reconversion proféssionelle dans le domaine de <span>l'informatique</span> (et plus particulièrement le <span>Web</span>) 
                                 pour lequel j'ai beaucoup d'affinité.
                                 </p>
                                 <p>
-                                J'ai récement éffectué une formation de <span>Développeur Web</span> et <span>Web mobile</span> sur le site d' l'Afpa Saint Jérôme à Marseille que j'ai validé
+                                J'ai récemment éffectué une formation de <span>Développeur Web</span> et <span>Web mobile</span> sur le site de l'Afpa Saint Jérôme à Marseille que j'ai validée
                                en Avril de cette année.
                                 </p>
                                <p>
-                               Je souhaite continué dans cette vois pour approfondir mes connaissances et c'est pour cela que j'ai choisit d'éffectuer une formation de <span>Concepteur dévellopeur d'application</span>
+                               Je souhaite continuer dans cette voix pour approfondir mes connaissances et c'est pour celà que j'ai choisi d'effectuer une formation de <span>Concepteur développeur d'application</span>
                                  en <span>alternance</span>.
                                </p>
                                  <p>
-                                 Je suis donc à la recherche d'une entreprise qui me permettrait d'allier <span>enseignement theorique</span>  et <span> formation pratique</span>.
+                                 Je suis donc à la recherche d'une Entreprise qui me permettrait d'allier <span>enseignement theorique</span>  et <span> formation pratique</span>.
                                 </p>
                                 <p>
                                 N’hésitez pas à me contacter pour tout renseignement complémentaire ou pour convenir d’un rendez-vous.
@@ -323,7 +323,7 @@
                                 </div>
                                 <div class="link-container">
                                     <div class="cv">
-                                        <a href="" download="./asset/cv.pdf" target="_Blank">
+                                        <a href="./asset/cv.pdf" download target="_Blank">
                                             <svg width="24" height="25" viewBox="0 0 496 282" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M241.18 213.324C231.392 228.708 222.001 243.758 200.958 258.379C189.702 266.269 163.794 281.685 126.968 281.685C56.709 281.685 0 230.605 0 140.801C0 62.315 53.345 0.315002 128.466 0.315002C158.9 0.315002 185.94 10.836 205.853 26.619C224.267 41.269 232.891 55.923 240.416 69.075L187.836 95.348C184.074 86.722 179.546 77.699 167.923 67.942C155.139 57.787 142.383 54.79 131.463 54.79C88.642 54.79 66.099 94.615 66.099 138.935C66.099 197.173 95.799 226.078 131.463 226.078C166.026 226.078 179.943 202.036 188.937 186.652L241.18 213.325V213.324ZM425.374 8.574H496L403.963 273.794H336.366L245.462 8.574H316.087L370.93 197.174L425.374 8.574Z" fill="black" />
                                             </svg>
